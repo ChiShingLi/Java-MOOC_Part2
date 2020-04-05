@@ -30,6 +30,6 @@ public class Main {
         System.out.println("owners:");
         System.out.println(owners.get(new LicensePlate("FI", "ABC-123")));
         System.out.println(owners.get(new LicensePlate("D", "B WQ-431")));
-        // if the hasCode-method hasn't been overwritten, the owners won't be found
+        // if the hashCode-method hasn't been overwritten, the owners won't be found
     }
 }
