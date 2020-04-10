@@ -6,14 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
         // You can test your method here
-        Set<String> set = new HashSet<>();
-        set.add("one");
-        set.add("one");
-        set.add("two");
+        Set<String> names = new HashSet<>();
+        names.add("first");
+        names.add("first");
+        names.add("second");
+        names.add("second");
+        names.add("second");
 
-        for (String element : set) {
-            System.out.println(element);
-        }
+        System.out.println(returnSize(names));
     }
 
     // implement the method returnSize here, which returns
