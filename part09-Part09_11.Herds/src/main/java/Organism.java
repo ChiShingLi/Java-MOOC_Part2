@@ -13,7 +13,7 @@ public class Organism implements Movable {
 
     //Creates and returns a string representation of the organism
     public String toString() {
-        return ("x: " + x + ";y: " + y);
+        return ("x: " + x + "; y: " + y);
     }
 
     //implements from 'Movable' interface
