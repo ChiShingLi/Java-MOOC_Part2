@@ -16,4 +16,8 @@ public abstract class Animal {
         System.out.println(name + " sleeps");
     }
 
+    public String getName() {
+        return this.name;
+    }
+
 }

@@ -1,6 +1,6 @@
 // part 3
 
-public class Cat extends Animal {
+public class Cat extends Animal implements NoiseCapable {
 
     private String name;
 
@@ -18,4 +18,9 @@ public class Cat extends Animal {
         System.out.println(this.name + " purrs");
     }
 
+    //override the method
+    @Override
+    public void makeNoise() {
+        purr();
+    }
 }

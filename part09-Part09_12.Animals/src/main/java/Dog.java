@@ -1,5 +1,5 @@
 //part 2
-public class Dog extends Animal {
+public class Dog extends Animal implements NoiseCapable {
 
     private String name;
 
@@ -19,4 +19,8 @@ public class Dog extends Animal {
         System.out.println(name + " barks");
     }
 
+    @Override
+    public void makeNoise() {
+        bark();
+    }
 }
