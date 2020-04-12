@@ -9,11 +9,11 @@ public abstract class Animal {
     }
 
     public void eat() {
-        System.out.println("(" + name + ") eats");
+        System.out.println(name + " eats");
     }
 
     public void sleep() {
-        System.out.println("(" + name + ") sleeps");
+        System.out.println(name + " sleeps");
     }
 
 }

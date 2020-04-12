@@ -1,10 +1,11 @@
-
+//part 2
 public class Dog extends Animal {
 
     private String name;
 
     //default constructor
     public Dog() {
+        //use super since Dog extends Animal class.
         super("Dog");
         this.name = "Dog";
     }
