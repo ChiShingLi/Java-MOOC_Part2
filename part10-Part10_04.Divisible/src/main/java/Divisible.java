@@ -14,12 +14,25 @@ public class Divisible {
 
         ArrayList<Integer> divisible = divisible(numbers);
 
+        //print each numbers in the list
         divisible.stream()
-                .forEach(luku -> System.out.println(luku));
+                .forEach(num -> System.out.println(num));
     }
 
     public static ArrayList<Integer> divisible(ArrayList<Integer> numbers) {
-        return new ArrayList<>();
+        ArrayList<Integer> result;
+
+        result = numbers.stream()
+                //filter & get all the numbers that are divisible by 2, 3, or 5
+                .filter(x -> {
+                    if (x % 2 == 0 || x % 3 == 0 || x % 5 == 0) {
+                        return true;
+                    }
+                    return false;
+                })
+                .collect(Collectors.toCollection(ArrayList::new)); //collect & return as integer ArrayList
+
+        return result;
     }
 
 }
